@@ -18,18 +18,19 @@ public class Game {
 
     private String title;
 
-    @Column(name = "game_year")
-    private Integer year;
+    private Integer gameYear;
 
     private String genre;
 
-    private String platform;
+    private String platforms;
 
     private Double score;
 
     private String imgUrl;
 
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
-    
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 }
