@@ -2,13 +2,7 @@ package com.rramirez.dslist.dto;
 
 
 import com.rramirez.dslist.entities.Game;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
 public class GameMinDto {
     private Long id;
 
@@ -27,5 +21,25 @@ public class GameMinDto {
         gameYear = entity.getGameYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Integer getGameYear() {
+        return gameYear;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
     }
 }
